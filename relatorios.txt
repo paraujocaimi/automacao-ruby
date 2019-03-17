@@ -1,0 +1,35 @@
+relatorio no console
+rspec spec\bank\saque_cp_spec.rb -fd 
+
+relatorio HTML
+rspec --format html --out report.html
+? rspec saque_cc_spec.rb --format html --out report.html
+
+
+-----
+Capybara GemFile
+
+source 'https://rubygems.org'
+
+
+gem 'capybara'
+gem 'selenium-webdriver'
+gem 'rspec'
+
+1. montar projeto
+bundle install
+rspec --init
+
+require 'capybara'
+
+require 'capybara/rspec'
+config.include Cabybara:DSL
+
+
+Capybara.configure do |config|
+	config.default_driver = :selenium_chrome
+end
+
+
+https://training-wheels-protocol.herokuapp.com/ 
+
