@@ -8,6 +8,7 @@ describe 'Forms' do
       click_button 'Login'
   
       expect(find('#flash').visible?).to be true
+      #have_content se existe aquela string existe no texto
       expect(find('#flash')).to have_content 'Olá, Tony Stark. Você acessou a área logada!'
     end
   
